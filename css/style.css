@@ -2994,6 +2994,9 @@ body {
 }
 
 @media (max-width: 496px) {
+   .first-screen .swiper-pagination{
+      display: none;
+   }
   .first-screen-slider__wrapper {
     width: 85%;
   }
