@@ -267,7 +267,11 @@ const firstScreenSlider = new Swiper(`.first-screen__slider`, {
    slideToClickedSlide: true,
    loop: true,
    spaceBetween: 65,
-
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+   },
    breakpoints: {
       320: {
          slidesPerView: 1,
@@ -275,11 +279,7 @@ const firstScreenSlider = new Swiper(`.first-screen__slider`, {
       },
       496: {
          slidesPerView: 1,
-         pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-         },
+
       },
       767: {
          slidesPerView: 1,
